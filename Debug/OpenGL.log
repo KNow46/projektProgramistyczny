@@ -1,0 +1,52 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (OpenGL.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Source.cpp
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Global.h(5,36): warning C4091: 'extern ': ignored on left of 'Owner' when no variable is declared
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\GameOverScreen.h(27,75): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(40,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(44,49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(51,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(56,52): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(56,103): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(57,55): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(57,133): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(58,55): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(58,130): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(59,53): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(59,100): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(76,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(91,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(96,56): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(96,111): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(97,59): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(97,145): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(98,59): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(98,142): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(99,57): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(99,108): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(116,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(157,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(170,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(184,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(191,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(212,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(228,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(265,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(302,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(329,126): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(329,106): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(329,87): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(329,66): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(332,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(336,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(466,47): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(490,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(499,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(506,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(515,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(519,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(527,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(527,39): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\Source.cpp(543,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  OpenGL.vcxproj -> C:\Users\Krzysztof\source\repos\projektProgramistyczny\Debug\Arkanoid.exe
