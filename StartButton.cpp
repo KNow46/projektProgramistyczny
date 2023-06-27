@@ -20,11 +20,11 @@ void StartButton::onClick()
         allInterfaceObjects.pop_back();
     }
 
-    Text* points = new Text(500, 29, 100, 20, "0", 10, Text::points);
+    Text* points = new Text(750, 43, 150, 30, "0", 15, Text::points);
     pointsPtr = points;
     allInterfaceObjects.push_back(points);
 
-    Text* minimumPoints = new Text(540, 29, 100, 20, "/" + std::to_string(levelGenerator.getMinimumWinScore(1) ), 10, Text::requiredPoints);
+    Text* minimumPoints = new Text(810, 43, 150, 30, "/" + std::to_string(levelGenerator.getMinimumWinScore(1) ), 15, Text::requiredPoints);
     allInterfaceObjects.push_back(minimumPoints);
 
     levelGenerator.setPointsPtr(pointsPtr);

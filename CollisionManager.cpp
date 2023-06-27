@@ -1,7 +1,8 @@
 #include "CollisionManager.h"
+#include "Global.h"
 
-int upperMargin = 56;
-int sideMargin = 26;
+int upperMargin = 0.116 * windowHeight;
+int sideMargin = 0.04 * windowWidth;
 
 void CollisionManager::checkCollisions()
 {
@@ -17,17 +18,17 @@ void CollisionManager::checkCollisions()
 				if (ball->getX() < sideMargin)
 				{
 					ball->horizontalReflection();
-					ball->setX(sideMargin + 5);
+					ball->setX(sideMargin + 7);
 				}
 				if(ball->getX() + ball->getWidth() > windowWidth - sideMargin)
 				{
 					ball->horizontalReflection();
-					ball->setX(windowWidth-5- sideMargin -ball->getWidth());
+					ball->setX(windowWidth-7- sideMargin -ball->getWidth());
 				}
-				if (ball->getY() < 56)
+				if (ball->getY() < 84)
 				{
 					ball->verticalReflection();
-					ball->setY(upperMargin + 5);
+					ball->setY(upperMargin + 7);
 				}
 				ball->move();
 				//std::cout << ball->getY() <<std::endl;
@@ -113,7 +114,7 @@ void CollisionManager::checkCollisions()
 						}
 						if (cornerInside != -1)
 						{
-							float safetyTeleport = 3;
+							float safetyTeleport = 6;
 
 							if (cornerInside == 0) //corner number 0 collision actitions
 							{

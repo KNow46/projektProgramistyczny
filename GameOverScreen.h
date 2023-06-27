@@ -24,7 +24,7 @@ public:
 			}
 		}
 
-		allInterfaceObjects.push_back(new Text(windowWidth / 2-25, windowHeight * 0.48, 300, 100, std::to_string(points), 13, Text::none));
+		allInterfaceObjects.push_back(new Text(windowWidth / 2-37, windowHeight * 0.48, 450, 150, std::to_string(points), 19, Text::none));
 		
 		int whereChangeHighScore = 0;
 		for (int i = 0; i < 5; i++)

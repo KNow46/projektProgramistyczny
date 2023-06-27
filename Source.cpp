@@ -324,8 +324,8 @@ void endGame(std::vector<InterfaceObject*>& allInterfaceObjects, std::vector<Gam
         allSceneObjects.pop_back();
     }
     isGameFinished = true;
-    startButton = new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
-    highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
+    startButton = new StartButton(windowWidth / 2 - windowWidth / 6, windowHeight / 6, windowWidth / 3, windowHeight / 5, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
+    highscoresButton = new HighscoresButton(windowWidth / 2 - windowWidth / 6, windowHeight / 2.5, windowWidth / 3, windowHeight / 5, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
     allInterfaceObjects.push_back(new GameOverScreen(windowWidth * 0.25, windowHeight * 0.1, windowWidth * 0.5, windowHeight * 0.8, "res/textures/gameoverScreen.png", "res/textures/gameoverScreenHovered.png", 
     startButton, highscoresButton, allInterfaceObjects, isGameFinished, points));
     vector<InterfaceObject*> swapVec;
@@ -403,7 +403,9 @@ int main(void)
 
     va.AddBuffer(vb, layout);
     IndexBuffer ib(indicies, 6);
+
     Shader shader("res/shaders/Basic.shader");
+
     Renderer renderer;
 
     shader.Bind();
@@ -418,12 +420,12 @@ int main(void)
 
     LevelGenerator levelGenerator(allSceneObjects, allInterfaceObjects);
 
-    StartButton* startButton = new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
+    StartButton* startButton = new StartButton(windowWidth / 2 - windowWidth/6, windowHeight/6, windowWidth/3, windowHeight/5, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
     allInterfaceObjects.push_back(startButton);
 
 
 
-    HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
+    HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - windowWidth / 6, windowHeight / 2.5, windowWidth / 3, windowHeight / 5, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
     allInterfaceObjects.push_back(highscoresButton);
 
 
@@ -510,13 +512,13 @@ int main(void)
                         {
                             if (!(rocket->getX() + rocket->getWidth() / 2 - 10 < ballX && rocket->getX() + rocket->getWidth() / 2 + 10 > ballX))
                             {
-                                if(rocket->getX() + rocket->getWidth() / 2 - 10 < ballX)
+                                if(rocket->getX() + rocket->getWidth() / 2 - 10 < ballX && rocket->getX() + rocket->getWidth() <= windowWidth * 0.96)
                                 {
-                                    rocket->setX(rocket->getX() + 5);
+                                    rocket->setX(rocket->getX() + 8);
                                 }
-                                else
+                                else if(rocket->getX() >= windowWidth * 0.04)
                                 {
-                                    rocket->setX(rocket->getX() - 5);
+                                    rocket->setX(rocket->getX() - 8);
                                 }
                             }
    

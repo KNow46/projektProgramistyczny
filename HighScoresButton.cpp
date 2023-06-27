@@ -30,13 +30,13 @@ void HighscoresButton::onClick()
         }
     }
 
-    Image* highscoresTable = new Image(200, 50, windowWidth - 400, windowHeight - 100, "res/textures/highscoresTable.png");
+    Image* highscoresTable = new Image(300, 75, windowWidth - 600, windowHeight - 150, "res/textures/highscoresTable.png");
     allInterfaceObjects.push_back(highscoresTable);
 
     Text* points[5];
     for (int i = 0; i < 5; i++) 
     {
-        points[i] = new Text(windowWidth / 2 - 50, 100 + 60 * i, 200, 50, "0", 20, Text::none);
+        points[i] = new Text(windowWidth / 2 - 75, 150 + 90 * i, 300, 75, "0", 30, Text::none);
     }
     pointsPtr = points[0];
 
@@ -47,7 +47,7 @@ void HighscoresButton::onClick()
         allInterfaceObjects.push_back(points[i]);
     }
 
-    BackButton* backButton = new BackButton(50, 350, 100, 50, "res/textures/backButton.png", "res/textures/backButtonHovered.png", allInterfaceObjects,levelGenerator);
+    BackButton* backButton = new BackButton(75, 475, 150, 75, "res/textures/backButton.png", "res/textures/backButtonHovered.png", allInterfaceObjects,levelGenerator);
     allInterfaceObjects.push_back(backButton);
 
     

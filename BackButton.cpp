@@ -21,9 +21,9 @@ void BackButton::onClick()
         allInterfaceObjects.pop_back();
     }
 
-    StartButton* startButton = new StartButton(windowWidth / 2 - 75, 100, 150, 80, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
+    StartButton* startButton = new StartButton(windowWidth / 2 - windowWidth / 6, windowHeight / 6, windowWidth / 3, windowHeight / 5, "res/textures/startButton.png", "res/textures/startButtonHovered.png", allInterfaceObjects, levelGenerator);
     allInterfaceObjects.push_back(startButton);
 
-    HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - 75, 200, 150, 80, "res/textures/highscoresButton.png","res/textures/highscoresButtonHovered.png", allInterfaceObjects , levelGenerator);
+    HighscoresButton* highscoresButton = new HighscoresButton(windowWidth / 2 - windowWidth / 6, windowHeight / 2.5, windowWidth / 3, windowHeight / 5, "res/textures/highscoresButton.png","res/textures/highscoresButtonHovered.png", allInterfaceObjects , levelGenerator);
     allInterfaceObjects.push_back(highscoresButton);
 }

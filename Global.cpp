@@ -1,3 +1,3 @@
 #include "Global.h"
-int windowHeight = 480;
-int windowWidth = 640;
+int windowHeight = 720;
+int windowWidth = 960;
