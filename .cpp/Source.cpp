@@ -17,12 +17,10 @@
 #include "Texture.h"
 #include "GameObject.h"
 #include "Rocket.h"
-#include "Ball.h"
+#include ".h/Ball.h"
 #include "CollisionManager.h"
 #include "Block.h"
 #include "Background.h"
-#include "MyContainer.h"
-#include "BallBlock.h"
 #include "Image.h"
 #include "InterfaceObject.h"
 #include "StartButton.h"
@@ -328,7 +326,7 @@ void endGame(std::vector<InterfaceObject*>& allInterfaceObjects, std::vector<Gam
     highscoresButton = new HighscoresButton(windowWidth / 2 - windowWidth / 6, windowHeight / 2.5, windowWidth / 3, windowHeight / 5, "res/textures/highscoresButton.png", "res/textures/highscoresButtonHovered.png", allInterfaceObjects, levelGenerator);
     allInterfaceObjects.push_back(new GameOverScreen(windowWidth * 0.25, windowHeight * 0.1, windowWidth * 0.5, windowHeight * 0.8, "res/textures/gameoverScreen.png", "res/textures/gameoverScreenHovered.png", 
     startButton, highscoresButton, allInterfaceObjects, isGameFinished, points));
-    vector<InterfaceObject*> swapVec;
+    std::vector<InterfaceObject*> swapVec;
     for (int i = 0; i < allInterfaceObjects.size(); i++)
     {
         swapVec.push_back(allInterfaceObjects[i]);
@@ -339,6 +337,34 @@ void endGame(std::vector<InterfaceObject*>& allInterfaceObjects, std::vector<Gam
     }
 
     levelGenerator.setCurrentLevel(1);
+}
+void moveEnemyRocket(Rocket* rocket, Owner currentBallOwner, float enemyRocketSpeed, float ballX)
+{
+    if (currentBallOwner == enemy)
+    {
+        if (!(rocket->getX() + rocket->getWidth() / 2 - 10 < ballX && rocket->getX() + rocket->getWidth() / 2 + 10 > ballX))
+        {
+            if (rocket->getX() + rocket->getWidth() / 2 - 10 < ballX && rocket->getX() + rocket->getWidth() <= windowWidth * 0.96)
+            {
+                rocket->setX(rocket->getX() + enemyRocketSpeed);
+            }
+            else if (rocket->getX() >= windowWidth * 0.04)
+            {
+                rocket->setX(rocket->getX() - enemyRocketSpeed);
+            }
+        }
+    }
+    else
+    {
+        if (rocket->getX() + rocket->getWidth() / 1.5 < windowWidth / 2)
+        {
+            rocket->setX(rocket->getX() + enemyRocketSpeed);
+        }
+        else if (rocket->getX() + rocket->getWidth() / 2.5 > windowWidth / 2)
+        {
+            rocket->setX(rocket->getX() - enemyRocketSpeed);
+        }
+    }
 }
 int main(void)
 {
@@ -446,6 +472,7 @@ int main(void)
 
     bool isGameFinished = false;
 
+    float enemyRocketSpeed = 8.0f;
 
     int ballX;
     Owner currentBallOwner = player;
@@ -508,20 +535,9 @@ int main(void)
                             rocket->setX(xpos - rocket->getWidth() / 2);
                             rocket->setSpeed(lastFramesCursorPosition[5] - lastFramesCursorPosition[0]);
                         }
-                        if (rocket->getOwner() == enemy && currentBallOwner == enemy)
+                        if (rocket->getOwner() == enemy)
                         {
-                            if (!(rocket->getX() + rocket->getWidth() / 2 - 10 < ballX && rocket->getX() + rocket->getWidth() / 2 + 10 > ballX))
-                            {
-                                if(rocket->getX() + rocket->getWidth() / 2 - 10 < ballX && rocket->getX() + rocket->getWidth() <= windowWidth * 0.96)
-                                {
-                                    rocket->setX(rocket->getX() + 8);
-                                }
-                                else if(rocket->getX() >= windowWidth * 0.04)
-                                {
-                                    rocket->setX(rocket->getX() - 8);
-                                }
-                            }
-   
+                            moveEnemyRocket(rocket, currentBallOwner, enemyRocketSpeed, ballX);
                         }
                     }
                 }

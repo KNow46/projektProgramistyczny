@@ -1,13 +1,15 @@
+#pragma once
 #include "Background.h"
 
+
 Background::Background(std::string animationPath, int framesCount)
-    : GameObject(0, 0, windowWidth, windowHeight, "res/textures/empty.png"), framesCounter(-1), framesCount(framesCount), frames(MyContainer<Texture*>())
+    : GameObject(0, 0, windowWidth, windowHeight, "res/textures/empty.png"), framesCounter(-1), framesCount(framesCount), frames(std::vector<Texture*>())
 {
     for (int i = 0; i < framesCount; i++)
     {
         std::string filename = animationPath + "/frame" + std::to_string(i + 1) + ".png";
         Texture* bgFrame = new Texture(filename);
-        frames.push_front(bgFrame);
+        frames.push_back(bgFrame);
     }
 }
 
@@ -21,7 +23,7 @@ const Texture* Background::getTexture()
 
 Background::~Background()
 {
-    int size = frames.getSize();
+    int size = frames.size();
     for (int i = 0; i < size; i++)
     {
         delete frames[i];

@@ -1,3 +1,4 @@
+#pragma once
 #include "Ball.h"
 #include <cmath>
 #define _USE_MATH_DEFINES
@@ -5,11 +6,12 @@
 #include <iostream>
 #include <windows.h>
 #include <mmsystem.h>
+#include <vector>
 
 
 Ball::Ball(int x, int y, int height, int width, float speedX, float speedY, std::string animationPath, int framesCount)
     : GameObject(x, y, height, width, "res/textures/empty.png"), speedX(speedX), speedY(speedY), baseSpeedX(speedX), baseSpeedY(speedY),
-    framesCounter(-1), framesCount(framesCount), frames(MyContainer<Texture*>()), owner(player)
+    framesCounter(-1), framesCount(framesCount), frames(std::vector<Texture*>()), owner(player)
 {
     speed = sqrt(speedX * speedX + speedY * speedY);
     double tg = speedY / speedX;
@@ -17,14 +19,14 @@ Ball::Ball(int x, int y, int height, int width, float speedX, float speedY, std:
     {
         std::string filename = animationPath + "/frame" + std::to_string(i + 1) + ".png";
         Texture* bgFrame = new Texture(filename);
-        frames.push_front(bgFrame);
+        frames.push_back(bgFrame);
     }
    
 }
 
 Ball::Ball(int x, int y, int height, int width, float speedX, float speedY, std::string texturePath, std::string enemyTexturePath)
     : GameObject(x, y, height, width, texturePath), speedX(speedX), speedY(speedY), baseSpeedX(speedX), baseSpeedY(speedY),
-    framesCounter(-1), framesCount(0), frames(MyContainer<Texture*>()), owner(player)
+    framesCounter(-1), framesCount(0), frames(std::vector<Texture*>()), owner(player)
 {
     speed = sqrt(speedX * speedX + speedY * speedY);
     double tg = speedY / speedX;
@@ -32,7 +34,7 @@ Ball::Ball(int x, int y, int height, int width, float speedX, float speedY, std:
     {
         std::string filename = animationPath + "/frame" + std::to_string(i + 1) + ".png";
         Texture* bgFrame = new Texture(filename);
-        frames.push_front(bgFrame);
+        frames.push_back(bgFrame);
     }
     enemyTexture = new Texture(enemyTexturePath);
 }
@@ -160,7 +162,7 @@ void Ball::verticalReflection()
 
 Ball::~Ball()
 {
-    int size = frames.getSize();
+    int size = frames.size();
     for (int i = 0; i < size; i++)
     {
         delete frames[i];

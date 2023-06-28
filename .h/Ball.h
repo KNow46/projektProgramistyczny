@@ -1,7 +1,7 @@
 #pragma once
 #include "GameObject.h"
 #include <string>
-#include "MyContainer.h"
+#include <vector>
 #include "Global.h"
 
 class Ball : public GameObject
@@ -53,7 +53,7 @@ private:
     int framesCounter;
     int framesCount;
     std::string animationPath;
-    MyContainer<Texture*> frames;
+    std::vector<Texture*> frames;
     Owner owner;
     Texture* enemyTexture;
  

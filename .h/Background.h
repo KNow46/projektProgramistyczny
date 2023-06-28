@@ -6,7 +6,7 @@
 #include <vector>
 #include <sstream>
 #include <forward_list>
-#include "MyContainer.h"
+
 
 class Background : public GameObject
 {
@@ -21,7 +21,7 @@ private:
     int framesCounter;
     int framesCount;
     std::string animationPath;
-    MyContainer<Texture*> frames;
+   std::vector<Texture*> frames;
 
     void ballCollisionEffect();
 };

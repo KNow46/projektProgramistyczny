@@ -29,71 +29,71 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include=".cpp\BackButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CollisionManager.cpp">
+    <ClCompile Include=".cpp\Background.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Global.cpp">
+    <ClCompile Include=".cpp\Ball.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Block.cpp">
+    <ClCompile Include=".cpp\Block.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BallBlock.cpp">
+    <ClCompile Include=".cpp\CollisionManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BackButton.cpp">
+    <ClCompile Include=".cpp\GameOverScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HighScoresButton.cpp">
+    <ClCompile Include=".cpp\Global.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Background.cpp">
+    <ClCompile Include=".cpp\HighScoresButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Rocket.cpp">
+    <ClCompile Include=".cpp\LevelGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StartButton.cpp">
+    <ClCompile Include=".cpp\RedBlock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ball.cpp">
+    <ClCompile Include=".cpp\Rocket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Text.cpp">
+    <ClCompile Include=".cpp\Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\vendor\stb_image\stb_image.cpp">
+    <ClCompile Include=".cpp\StartButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".cpp\Text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".cpp\YellowBlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".cpp\Shader.cpp">
       <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="VertexArray.cpp">
+    <ClCompile Include=".cpp\Renderer.cpp">
       <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="VertexBuffer.cpp">
+    <ClCompile Include=".cpp\IndexBuffer.cpp">
       <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="Texture.cpp">
+    <ClCompile Include=".cpp\stb_image.cpp">
       <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="IndexBuffer.cpp">
+    <ClCompile Include=".cpp\VertexBuffer.cpp">
       <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.cpp">
+    <ClCompile Include=".cpp\VertexArray.cpp">
       <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="Shader.cpp">
+    <ClCompile Include=".cpp\Texture.cpp">
       <Filter>Source Files\OpenGL</Filter>
-    </ClCompile>
-    <ClCompile Include="LevelGenerator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RedBlock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="YellowBlock.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -105,86 +105,83 @@
     <ClInclude Include="Button.h">
       <Filter>Source Files\vendor</Filter>
     </ClInclude>
-    <ClInclude Include="Image.h">
+    <ClInclude Include=".h\BackButton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Block.h">
+    <ClInclude Include=".h\Background.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Ball.h">
+    <ClInclude Include=".h\Ball.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BackButton.h">
+    <ClInclude Include=".h\Block.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Background.h">
+    <ClInclude Include=".h\BlockCrack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
+    <ClInclude Include=".h\CollisionManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Global.h">
+    <ClInclude Include=".h\GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MyContainer.h">
+    <ClInclude Include=".h\GameOverScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Rocket.h">
+    <ClInclude Include=".h\Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BallBlock.h">
+    <ClInclude Include=".h\HighScoresButton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BlockCrack.h">
+    <ClInclude Include=".h\InterfaceObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CollisionManager.h">
+    <ClInclude Include=".h\LevelGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HighScoresButton.h">
+    <ClInclude Include=".h\RedBlock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StartButton.h">
+    <ClInclude Include=".h\Rocket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Text.h">
+    <ClInclude Include=".h\StartButton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LevelGenerator.h">
+    <ClInclude Include=".h\Text.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameOverScreen.h">
+    <ClInclude Include=".h\YellowBlock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="VertexBufferLayout.h">
+    <ClInclude Include=".h\stb_image.h">
       <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="VertexBuffer.h">
+    <ClInclude Include=".h\Image.h">
       <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="VertexArray.h">
+    <ClInclude Include=".h\IndexBuffer.h">
       <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
+    <ClInclude Include=".h\VertexArray.h">
       <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="src\vendor\stb_image\stb_image.h">
+    <ClInclude Include=".h\VertexBuffer.h">
       <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer.h">
+    <ClInclude Include=".h\VertexBufferLayout.h">
       <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="IndexBuffer.h">
+    <ClInclude Include=".h\Texture.h">
       <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.h">
+    <ClInclude Include=".h\Shader.h">
       <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="RedBlock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="YellowBlock.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include=".h\Renderer.h">
+      <Filter>Header Files\OpenGL</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

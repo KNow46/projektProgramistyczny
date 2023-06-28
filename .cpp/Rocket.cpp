@@ -1,13 +1,13 @@
 #include "Rocket.h"
 
 Rocket::Rocket(int x, int y, int height, int width, std::string animationPath, int framesCount, Owner owner)
-    : GameObject(x, y, height, width, "res/textures/empty.png"), framesCounter(-1), framesCount(framesCount), frames(MyContainer<Texture*>()), speed(0), rocketOwner(owner)
+    : GameObject(x, y, height, width, "res/textures/empty.png"), framesCounter(-1), framesCount(framesCount), frames(std::vector<Texture*>()), speed(0), rocketOwner(owner)
 {
     for (int i = 0; i < framesCount; i++)
     {
         std::string filename = animationPath + "/" + std::to_string(i + 1) + ".png";
         Texture* bgFrame = new Texture(filename);
-        frames.push_front(bgFrame);
+        frames.push_back(bgFrame);
     }
 }
 void Rocket::setSpeed(double x)
@@ -37,7 +37,7 @@ Owner Rocket::getOwner()
 
 Rocket::~Rocket()
 {
-    int size = frames.getSize();
+    int size = frames.size();
     for (int i = 0; i < size; i++)
     {
         delete frames[i];
