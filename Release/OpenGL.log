@@ -1,6 +1,61 @@
-﻿LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+﻿  GameOverScreen.cpp
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.h\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.h\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.h\Global.h(5,36): warning C4091: 'extern ': ignored on left of 'Owner' when no variable is declared
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\GameOverScreen.cpp(20,79): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Source.cpp
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.h\Global.h(5,36): warning C4091: 'extern ': ignored on left of 'Owner' when no variable is declared
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.h\GameObject.h(20,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.h\GameObject.h(22,32): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(38,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(42,49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(49,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(54,52): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(54,103): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(55,55): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(55,133): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(56,55): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(56,130): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(57,53): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(57,100): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(74,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(89,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(94,56): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(94,111): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(95,59): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(95,145): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(96,59): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(96,142): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(97,57): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(97,108): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(114,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(155,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(168,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(182,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(189,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(210,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(226,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(263,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(300,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(326,93): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(327,126): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(327,106): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(327,87): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(327,66): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(330,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(334,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(454,111): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(495,47): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(519,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(528,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(535,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(540,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(545,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(545,39): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Source.cpp(561,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  Compiler switch has changed, fall back to full compilation.
 C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\LevelGenerator.cpp(161): warning C4715: 'LevelGenerator::getMinimumWinScore': not all control paths return a value
 C:\Users\Krzysztof\source\repos\projektProgramistyczny\.cpp\Ball.cpp(59): warning C4715: 'Ball::getTexture': not all control paths return a value
   All 1115 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.

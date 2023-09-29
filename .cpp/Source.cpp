@@ -17,7 +17,7 @@
 #include "Texture.h"
 #include "GameObject.h"
 #include "Rocket.h"
-#include ".h/Ball.h"
+#include "Ball.h"
 #include "CollisionManager.h"
 #include "Block.h"
 #include "Background.h"

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include "GameObject.h"
-#include ".h/Ball.h"
+#include "Ball.h"
 #include "Rocket.h"
 #include "Global.h"
 #include "Block.h"
