@@ -1,5 +1,5 @@
 #include "GameOverScreen.h"
-#include "Text.h" // You may need to include the appropriate header for the Text class.
+#include "Text.h"
 
 GameOverScreen::GameOverScreen(int x, int y, int width, int height, std::string texturePath, std::string textureHoveredPath, StartButton* startButton, HighscoresButton* highscoresButton, std::vector<InterfaceObject*>& allInterfaceObjects, bool& isGameLost, int& points)
     : InterfaceObject(x, y, width, height, texturePath, textureHoveredPath), isGameLost(isGameLost), allInterfaceObjects(allInterfaceObjects), startButton(startButton), highscoresButton(highscoresButton)
